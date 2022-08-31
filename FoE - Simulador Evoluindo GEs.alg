@@ -8,32 +8,32 @@ inicio
 Escreval ("----------------------------------------------------------------------------------")
 Escreval ("                           Calculadora de GEs 90%")
 Escreval ("----------------------------------------------------------------------------------")
-Escreval ("          Para começar digite quantos PFs são necessarios no total")
-Escreval ("                        para aumentar o nível do GE:")
+Escreval ("          Para comeÃ§ar digite quantos PFs sÃ£o necessarios no total")
+Escreval ("                        para aumentar o nÃ­vel do GE:")
 Leia (TotalPFs)
 
 Escreval ("----------------------------------------------------------------------------------")
 Escreval ("                    Digite o valor em PFs de cada posicao")
-Escreval ("                        SEM contar o bônus do Arco.")
+Escreval ("                        SEM contar o bÃ´nus do Arco.")
 Escreval ("----------------------------------------------------------------------------------")
 
-Escreval ("                         Quantos PFs a 1° posição dá?")
+Escreval ("                         Quantos PFs a 1Â° posiÃ§Ã£o dÃ¡?")
 Leia (Posicao1)
 Escreval ("----------------------------------------------------------------------------------")
 
-Escreval ("                         Quantos PFs a 2° posição dá?")
+Escreval ("                         Quantos PFs a 2Â° posiÃ§Ã£o dÃ¡?")
 Leia (Posicao2)
 Escreval ("----------------------------------------------------------------------------------")
 
-Escreval ("                         Quantos PFs a 3° posição dá?")
+Escreval ("                         Quantos PFs a 3Â° posiÃ§Ã£o dÃ¡?")
 Leia (Posicao3)
 Escreval ("----------------------------------------------------------------------------------")
 
-Escreval ("                         Quantos PFs a 4° posição dá?")
+Escreval ("                         Quantos PFs a 4Â° posiÃ§Ã£o dÃ¡?")
 Leia (Posicao4)
 Escreval ("----------------------------------------------------------------------------------")
 
-Escreval ("                         Quantos PFs a 5° posição dá?")
+Escreval ("                         Quantos PFs a 5Â° posiÃ§Ã£o dÃ¡?")
 Leia (Posicao5)
 PFs_Investidores <-  (Posicao1 * 90 / 100 + Posicao1) + (Posicao2 * 90 / 100 + Posicao2) + (Posicao3 * 90 / 100 + Posicao3) + (Posicao4 * 90 / 100 + Posicao4) + (Posicao5 * 90 / 100 + Posicao5)
 
@@ -55,11 +55,11 @@ Escreval ("---------------------------------------------------------------------
 Escreval ("                 OBS: O investimento necessario tem 1 PF a menos")
 Escreval ("                  para lhe dar controle sobre quando virar o GE.")
 Escreval ("----------------------------------------------------------------------------------")
-Escreval ("                    1º Posição ", Posicao1 * 90 / 100 + Posicao1 :5:0, " Ponto(s) Forge")
-Escreval ("                    2º Posição ", Posicao2 * 90 / 100 + Posicao2 :5:0, " Ponto(s) Forge")
-Escreval ("                    3º Posição ", Posicao3 * 90 / 100 + Posicao3 :5:0, " Ponto(s) Forge")
-Escreval ("                    4º Posição ", Posicao4_Mais_Bonus:5:0, " Ponto(s) Forge")
-Escreval ("                    5º Posição ", Posicao5_Mais_Bonus:5:0, " Ponto(s) Forge")
+Escreval ("                    1Âº PosiÃ§Ã£o ", Posicao1 * 90 / 100 + Posicao1 :5:0, " Ponto(s) Forge")
+Escreval ("                    2Âº PosiÃ§Ã£o ", Posicao2 * 90 / 100 + Posicao2 :5:0, " Ponto(s) Forge")
+Escreval ("                    3Âº PosiÃ§Ã£o ", Posicao3 * 90 / 100 + Posicao3 :5:0, " Ponto(s) Forge")
+Escreval ("                    4Âº PosiÃ§Ã£o ", Posicao4_Mais_Bonus:5:0, " Ponto(s) Forge")
+Escreval ("                    5Âº PosiÃ§Ã£o ", Posicao5_Mais_Bonus:5:0, " Ponto(s) Forge")
 Escreval ("----------------------------------------------------------------------------------")
 
 fimalgoritmo
