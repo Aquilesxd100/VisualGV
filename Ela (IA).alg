@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 04/02/2022
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 Resposta, Nome : Caractere
 Detector_Resposta, Detector_Resposta2, Detector_Resposta3, Casa_Letra, Nome_com_Sobrenome, Relacao, Cenario, FimInesperado : Inteiro
@@ -29,7 +29,7 @@ Se (Detector_Resposta = 0) entao
    Detector_Resposta <- Pos("qm", Resposta)
 FimSe
  Se (Detector_Resposta > 0) entao
-   Escreval ("???: Meu nome é Sarah, e o seu? ")
+   Escreval ("???: Meu nome Ã© Sarah, e o seu? ")
    Leia (Nome)
    LimpaTela
    Nome <- Minusc(Nome)
@@ -37,7 +37,7 @@ FimSe
    Se (Detector_Resposta = 0) entao
       Detector_Resposta <- Pos("chamo", Nome)
       Se (Detector_Resposta = 0) entao
-         Detector_Resposta <- Pos("é", Nome)
+         Detector_Resposta <- Pos("Ã©", Nome)
          Se (Detector_Resposta = 0) entao
            Detector_Resposta <- Pos("de", Nome)
            Se (Detector_Resposta = 0) entao
@@ -66,24 +66,24 @@ FimSe
       Nome_Maiusculo_e_Minusculo (Nome)
       Escreval ("Sarah: Prazer em te conhecer ", nome, ".")
    FimSe
-   Escreval ("Sarah: É bom ter alguem para conversar, esse lugar geralmente é bem solitario.")
+   Escreval ("Sarah: Ã‰ bom ter alguem para conversar, esse lugar geralmente Ã© bem solitario.")
    Relacao <- Relacao + 1
-   Escreval ("Sarah: É a sua primeira vez aqui?")
+   Escreval ("Sarah: Ã‰ a sua primeira vez aqui?")
    Leia (Resposta)
    LimpaTela
    Resposta <- Minusc(Resposta)
    Detector_Resposta <- 0
-   Se (Resposta = "s") ou (Resposta = "sim") ou (Resposta = "é") ou (Resposta = "e") entao
+   Se (Resposta = "s") ou (Resposta = "sim") ou (Resposta = "Ã©") ou (Resposta = "e") entao
       Escreval ("Sarah: Que bom, todo mundo que vem aqui uma segunda vez diz ser chato.")
-      Escreval ("Sarah: Só não consigo entender por que eles voltam então.")
-      Escreval ("Sarah: Talvez tenham esperança que algo mude por conta propria.")
-        Escreval ("Sarah: Não sei.")
-        Escreval ("Sarah: O que você acha?")
+      Escreval ("Sarah: SÃ³ nÃ£o consigo entender por que eles voltam entÃ£o.")
+      Escreval ("Sarah: Talvez tenham esperanÃ§a que algo mude por conta propria.")
+        Escreval ("Sarah: NÃ£o sei.")
+        Escreval ("Sarah: O que vocÃª acha?")
         Detector_Resposta <- 0
         Leia (Resposta)
         LimpaTela
         Resposta <- Minusc(Resposta)
-        Detector_Resposta <- Pos("tédio", Resposta)
+        Detector_Resposta <- Pos("tÃ©dio", Resposta)
         Se (Detector_Resposta = 0) entao
            Detector_Resposta <- Pos("tedio", Resposta)
            Se (Detector_Resposta = 0) entao
@@ -101,59 +101,59 @@ FimSe
                                 Se (Detector_Resposta = 0) entao
                                    Detector_Resposta <- Pos("curiosidade", Resposta)
                                    Se (Detector_Resposta = 0) entao
-                                      Escreval ("Sarah: Será que não estamos pensando demais?")
-                                      Escreval ("Sarah: Será que não é algo bem mais simples")
+                                      Escreval ("Sarah: SerÃ¡ que nÃ£o estamos pensando demais?")
+                                      Escreval ("Sarah: SerÃ¡ que nÃ£o Ã© algo bem mais simples")
                                    Senao
                                       Escreval ("Sarah: Curiosidade...")
-                                      Escreval ("Sarah: Já levou a nossa especie tão longe...")
-                                      Escreval ("Sarah: Se você parar para pensar ela é tão neutra quanto a propria ciência ou lógica.")
-                                      Escreval ("Sarah: Não tem uma natureza boa ou ruim, ela só existe.")
-                                      Escreval ("Sarah: Então por mais que tenhamos chegado até aqui em parte por causa dela")
-                                      Escreval ("Sarah: Não sera ela que nos livrará de toda nossa natureza egoísta.")
+                                      Escreval ("Sarah: JÃ¡ levou a nossa especie tÃ£o longe...")
+                                      Escreval ("Sarah: Se vocÃª parar para pensar ela Ã© tÃ£o neutra quanto a propria ciÃªncia ou lÃ³gica.")
+                                      Escreval ("Sarah: NÃ£o tem uma natureza boa ou ruim, ela sÃ³ existe.")
+                                      Escreval ("Sarah: EntÃ£o por mais que tenhamos chegado atÃ© aqui em parte por causa dela")
+                                      Escreval ("Sarah: NÃ£o sera ela que nos livrarÃ¡ de toda nossa natureza egoÃ­sta.")
                                       Relacao <- Relacao + 1
                                    FimSe
                                 Senao
-                                   Escreval ("Sarah: É meio decepcionante, mas talvez você esteja certo...")
+                                   Escreval ("Sarah: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
                                 FimSe
                              Senao
-                                Escreval ("Sarah: É meio decepcionante, mas talvez você esteja certo...")
+                                Escreval ("Sarah: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
                              FimSe
                           Senao
-                             Escreval ("Sarah: É meio decepcionante, mas talvez você esteja certo...")
+                             Escreval ("Sarah: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
                           FimSe
                        Senao
-                          Escreval ("Sarah: É meio decepcionante, mas talvez você esteja certo...")
+                          Escreval ("Sarah: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
                        FimSe
                  Senao
-                    Escreval ("Sarah: É meio decepcionante, mas talvez você esteja certo...")
+                    Escreval ("Sarah: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
                  FimSe
               Senao
-                   Escreval ("Sarah: É meio decepcionante, mas talvez você esteja certo...")
+                   Escreval ("Sarah: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
               FimSe
            Senao
-                Escreval ("Sarah: É meio decepcionante, mas talvez você esteja certo...")
+                Escreval ("Sarah: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
            FimSe
         Senao
-             Escreval ("Sarah: É meio decepcionante, mas talvez você esteja certo...")
+             Escreval ("Sarah: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
         FimSe
             Escreval ("Sarah: Quer saber de algo que realmente muda o mundo?")
          Leia (Resposta)
          Resposta <- Minusc(Resposta)
          LimpaTela
-         Se (Resposta = "sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que não") ou (Resposta = "pqn") entao
+         Se (Resposta = "sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que nÃ£o") ou (Resposta = "pqn") entao
             Relacao <- Relacao + 1
             Escreval ("Sarah: Perspectiva.")
             Escreval ("Sarah: Acredite...")
             Escreval ("Sarah: Se tem algo que podemos fazer para mudar o mundo INTEIRO.")
-            Escreval ("Sarah: É mudarmos a nossa propria maneira de ver as coisas.")
+            Escreval ("Sarah: Ã‰ mudarmos a nossa propria maneira de ver as coisas.")
          Senao
             Escreval ("Sarah: Ah...")
             Relacao <- Relacao - 1
          FimSe
    Senao
-      Escreval ("Sarah: Diversos são os motivos que nos fazem voltar para um mesmo lugar.")
-      Escreval ("Sarah: Sejam eles pessoas, obrigações, saudade...")
-      Escreval ("Sarah: Porem para nos encontrarmos as vezes é necessario mudar um pouco o cenario.")
+      Escreval ("Sarah: Diversos sÃ£o os motivos que nos fazem voltar para um mesmo lugar.")
+      Escreval ("Sarah: Sejam eles pessoas, obrigaÃ§Ãµes, saudade...")
+      Escreval ("Sarah: Porem para nos encontrarmos as vezes Ã© necessario mudar um pouco o cenario.")
       Escreval ("Sarah: Como esta o seu cenario?")
       Leia (Resposta)
       Resposta <- Minusc(Resposta)
@@ -169,17 +169,17 @@ FimSe
                         Se(Detector_Resposta2 = 0) entao
                         Detector_Resposta2 <- Pos("estranho", Resposta)
                            Se(Detector_Resposta2 = 0) entao
-                           Detector_Resposta2 <- Pos("terrível", Resposta)
+                           Detector_Resposta2 <- Pos("terrÃ­vel", Resposta)
                               Se(Detector_Resposta2 = 0) entao
-                              Detector_Resposta2 <- Pos("horrível", Resposta)
+                              Detector_Resposta2 <- Pos("horrÃ­vel", Resposta)
                                  Se(Detector_Resposta2 = 0) entao
                                  Detector_Resposta2 <- Pos("pior", Resposta)
                                     Se(Detector_Resposta2 = 0) entao
-                                    Detector_Resposta2 <- Pos("não ta", Resposta)
+                                    Detector_Resposta2 <- Pos("nÃ£o ta", Resposta)
                                        Se(Detector_Resposta2 = 0) entao
-                                       Detector_Resposta2 <- Pos("não tá", Resposta)
+                                       Detector_Resposta2 <- Pos("nÃ£o tÃ¡", Resposta)
                                           Se(Detector_Resposta2 = 0) entao
-                                          Detector_Resposta2 <- Pos("nao tá", Resposta)
+                                          Detector_Resposta2 <- Pos("nao tÃ¡", Resposta)
                                              Se(Detector_Resposta2 = 0) entao
                                              Detector_Resposta2 <- Pos("nao ta", Resposta)
                                                 Se(Detector_Resposta2 = 0) entao
@@ -187,13 +187,13 @@ FimSe
                                                    Se(Detector_Resposta2 = 0) entao
                                                    Detector_Resposta2 <- Pos("n ta", Resposta)
                                                       Se(Detector_Resposta2 = 0) entao
-                                                      Detector_Resposta2 <- Pos("n tá", Resposta)
+                                                      Detector_Resposta2 <- Pos("n tÃ¡", Resposta)
                                                          Se(Detector_Resposta2 = 0) entao
-                                                         Detector_Resposta2 <- Pos("não ta", Resposta)
+                                                         Detector_Resposta2 <- Pos("nÃ£o ta", Resposta)
                                                             Se(Detector_Resposta2 = 0) entao
-                                                            Detector_Resposta2 <- Pos("não está", Resposta)
+                                                            Detector_Resposta2 <- Pos("nÃ£o estÃ¡", Resposta)
                                                                Se(Detector_Resposta2 = 0) entao
-                                                               Detector_Resposta2 <- Pos("nao está", Resposta)
+                                                               Detector_Resposta2 <- Pos("nao estÃ¡", Resposta)
                                                                 Se(Detector_Resposta2 = 0) entao
                                                                   Detector_Resposta2 <- Pos("-", Resposta)
                                                                      Se(Detector_Resposta2 = 0) entao
@@ -246,7 +246,7 @@ FimSe
       Detector_Resposta <- 0
       Detector_Resposta <- Pos("e voce", Resposta)
       Se (Detector_Resposta = 0) entao
-        Detector_Resposta <- Pos("e você", Resposta)
+        Detector_Resposta <- Pos("e vocÃª", Resposta)
             Se (Detector_Resposta = 0) entao
                Detector_Resposta <- Pos("e vc", Resposta)
                Se (Detector_Resposta = 0) entao
@@ -270,19 +270,19 @@ FimSe
          Escreval ("Sarah: Parece diferente e ao mesmo tempo similar a minha realidade.")
          Relacao <- Relacao + 1
          Escreval ("Sarah: Se eu fosse definir em uma cor seria o mais escuro dos tons de preto.")
-         Escreval ("Sarah: Em uma escuridao desse tipo não há meio termo.")
-         Escreval ("Sarah: Tudo pode mudar tão rapido...")
+         Escreval ("Sarah: Em uma escuridao desse tipo nÃ£o hÃ¡ meio termo.")
+         Escreval ("Sarah: Tudo pode mudar tÃ£o rapido...")
          Escreval ("Sarah: Porem ao mesmo tempo penso que talvez nada nunca mude.")
          Escreval ("Sarah: Quer saber de algo que realmente muda o mundo?")
          Leia (Resposta)
          LimpaTela
          Resposta <- Minusc(Resposta)
-         Se (Resposta = "sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que não") ou (Resposta = "pqn") entao
+         Se (Resposta = "sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que nÃ£o") ou (Resposta = "pqn") entao
             Relacao <- Relacao + 1
             Escreval ("Sarah: Perspectiva.")
             Escreval ("Sarah: Acredite...")
             Escreval ("Sarah: Se tem algo que podemos fazer para mudar o mundo INTEIRO.")
-            Escreval ("Sarah: É mudarmos a nossa propria maneira de ver as coisas.")
+            Escreval ("Sarah: Ã‰ mudarmos a nossa propria maneira de ver as coisas.")
          Senao
             Escreval ("Sarah: Ah...")
             Relacao <- Relacao - 1
@@ -293,12 +293,12 @@ FimSe
       Leia (Resposta)
       LimpaTela
       Resposta <- Minusc(Resposta)
-      Se (Resposta = "Sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que não") ou (Resposta = "pqn") entao
+      Se (Resposta = "Sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que nÃ£o") ou (Resposta = "pqn") entao
          Relacao <- Relacao + 1
          Escreval ("Sarah: Perspectiva.")
          Escreval ("Sarah: Acredite...")
          Escreval ("Sarah: Se tem algo que podemos fazer para mudar o mundo INTEIRO.")
-         Escreval ("Sarah: É mudarmos a nossa propria maneira de ver as coisas.")
+         Escreval ("Sarah: Ã‰ mudarmos a nossa propria maneira de ver as coisas.")
       Senao
             Escreval ("Sarah: Ah...")
             Relacao <- Relacao - 1
@@ -306,23 +306,23 @@ FimSe
       FimSe
    FimSe
  Senao
-     Escreval ("???: Esse lugar é tão solitario...")
-     Escreval ("???: É a sua primeira vez aqui?")
+     Escreval ("???: Esse lugar Ã© tÃ£o solitario...")
+     Escreval ("???: Ã‰ a sua primeira vez aqui?")
      Leia (Resposta)
      LimpaTela
      Resposta <- Minusc(Resposta)
      Detector_Resposta <- 0
-     Se (Resposta = "s") ou (Resposta = "sim") ou (Resposta = "é") ou (Resposta = "e") entao
+     Se (Resposta = "s") ou (Resposta = "sim") ou (Resposta = "Ã©") ou (Resposta = "e") entao
         Escreval ("???: Que bom, todo mundo que vem aqui uma segunda vez diz ser chato.")
-        Escreval ("???: Só não consigo entender por que eles voltam então.")
-        Escreval ("???: Talvez tenham esperança que algo mude por conta propria.")
-        Escreval ("???: Não sei.")
-        Escreval ("???: O que você acha?")
+        Escreval ("???: SÃ³ nÃ£o consigo entender por que eles voltam entÃ£o.")
+        Escreval ("???: Talvez tenham esperanÃ§a que algo mude por conta propria.")
+        Escreval ("???: NÃ£o sei.")
+        Escreval ("???: O que vocÃª acha?")
         Detector_Resposta <- 0
         Leia (Resposta)
         LimpaTela
         Resposta <- Minusc(Resposta)
-        Detector_Resposta <- Pos("tédio", Resposta)
+        Detector_Resposta <- Pos("tÃ©dio", Resposta)
         Se (Detector_Resposta = 0) entao
            Detector_Resposta <- Pos("tedio", Resposta)
            Se (Detector_Resposta = 0) entao
@@ -340,55 +340,55 @@ FimSe
                                 Se (Detector_Resposta = 0) entao
                                    Detector_Resposta <- Pos("curiosidade", Resposta)
                                    Se (Detector_Resposta = 0) entao
-                                      Escreval ("???: Será que não estamos pensando demais?")
-                                      Escreval ("???: Será que não é algo bem mais simples")
+                                      Escreval ("???: SerÃ¡ que nÃ£o estamos pensando demais?")
+                                      Escreval ("???: SerÃ¡ que nÃ£o Ã© algo bem mais simples")
                                    Senao
                                       Escreval ("???: Curiosidade...")
-                                      Escreval ("???: Já levou a nossa especie tão longe...")
-                                      Escreval ("???: Se você parar para pensar ela é tão neutra quanto a propria ciência ou lógica.")
-                                      Escreval ("???: Não tem uma natureza boa ou ruim, ela só existe.")
-                                      Escreval ("???: Então por mais que tenhamos chegado até aqui em parte por causa dela")
-                                      Escreval ("???: Não sera ela que nos livrará de toda nossa natureza egoísta.")
+                                      Escreval ("???: JÃ¡ levou a nossa especie tÃ£o longe...")
+                                      Escreval ("???: Se vocÃª parar para pensar ela Ã© tÃ£o neutra quanto a propria ciÃªncia ou lÃ³gica.")
+                                      Escreval ("???: NÃ£o tem uma natureza boa ou ruim, ela sÃ³ existe.")
+                                      Escreval ("???: EntÃ£o por mais que tenhamos chegado atÃ© aqui em parte por causa dela")
+                                      Escreval ("???: NÃ£o sera ela que nos livrarÃ¡ de toda nossa natureza egoÃ­sta.")
                                       Relacao <- Relacao + 1
                                    FimSe
                                 Senao
-                                   Escreval ("???: É meio decepcionante, mas talvez você esteja certo...")
+                                   Escreval ("???: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
                                 FimSe
                              Senao
-                                Escreval ("???: É meio decepcionante, mas talvez você esteja certo...")
+                                Escreval ("???: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
                              FimSe
                           Senao
-                             Escreval ("???: É meio decepcionante, mas talvez você esteja certo...")
+                             Escreval ("???: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
                           FimSe
                        Senao
-                          Escreval ("???: É meio decepcionante, mas talvez você esteja certo...")
+                          Escreval ("???: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
                        FimSe
                  Senao
-                    Escreval ("???: É meio decepcionante, mas talvez você esteja certo...")
+                    Escreval ("???: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
                  FimSe
               Senao
-                   Escreval ("???: É meio decepcionante, mas talvez você esteja certo...")
+                   Escreval ("???: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
               FimSe
            Senao
-                Escreval ("???: É meio decepcionante, mas talvez você esteja certo...")
+                Escreval ("???: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
            FimSe
         Senao
-             Escreval ("???: É meio decepcionante, mas talvez você esteja certo...")
+             Escreval ("???: Ã‰ meio decepcionante, mas talvez vocÃª esteja certo...")
         FimSe
          Escreval ("???: Quer saber de algo que realmente muda o mundo?")
          Leia (Resposta)
          LimpaTela
          Resposta <- Minusc(Resposta)
-         Se (Resposta = "sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que não") ou (Resposta = "pqn") entao
+         Se (Resposta = "sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que nÃ£o") ou (Resposta = "pqn") entao
             Relacao <- Relacao + 1
             Escreval ("???: Perspectiva.")
             Escreval ("???: Acredite...")
             Escreval ("???: Se tem algo que podemos fazer para mudar o mundo INTEIRO.")
-            Escreval ("???: É mudarmos a nossa propria maneira de ver as coisas.")
-            Escreval ("???: Algo semelhante é isso que temos agora, você ainda nao sabe o meu nome.")
-            Escreval ("???: Porem a partir do momento que descobrir que ele é Sarah.")
+            Escreval ("???: Ã‰ mudarmos a nossa propria maneira de ver as coisas.")
+            Escreval ("???: Algo semelhante Ã© isso que temos agora, vocÃª ainda nao sabe o meu nome.")
+            Escreval ("???: Porem a partir do momento que descobrir que ele Ã© Sarah.")
             Escreval ("Sarah: Vai perceber que certas coisas mudam.")
-            Escreval ("Sarah: Meio tarde para isso mas, e você, como se chama?")
+            Escreval ("Sarah: Meio tarde para isso mas, e vocÃª, como se chama?")
             Leia (Nome)
             LimpaTela
             Nome <- Minusc(Nome)
@@ -396,7 +396,7 @@ FimSe
             Se (Detector_Resposta = 0) entao
                Detector_Resposta <- Pos("chamo", Nome)
                   Se (Detector_Resposta = 0) entao
-                  Detector_Resposta <- Pos("é", Nome)
+                  Detector_Resposta <- Pos("Ã©", Nome)
                      Se (Detector_Resposta = 0) entao
                      Detector_Resposta <- Pos("de", Nome)
                         Se (Detector_Resposta = 0) entao
@@ -425,8 +425,8 @@ FimSe
             Nome_Maiusculo_e_Minusculo (Nome)
             Escreval ("Sarah: Prazer em te conhecer ", nome, ".")
             FimSe
-            Escreval ("Sarah: Raras são as pessoas que conseguimos ter conversas profundas como essa.")
-            Escreval ("Sarah: Geralmente ficamos tão ocupados com nossas tarefas do dia a dia")
+            Escreval ("Sarah: Raras sÃ£o as pessoas que conseguimos ter conversas profundas como essa.")
+            Escreval ("Sarah: Geralmente ficamos tÃ£o ocupados com nossas tarefas do dia a dia")
             Escreval ("Sarah: que esquecemos de simplesmente parar por alguns minutos")
             Escreval ("Sarah: e realmente pensar sobre as coisas.")
             Relacao <- Relacao + 1
@@ -436,9 +436,9 @@ FimSe
             Relacao <- Relacao - 1
          FimSe
      Senao
-        Escreval ("???: Diversos são os motivos que nos fazem voltar para um mesmo lugar.")
-        Escreval ("???: Sejam eles pessoas, obrigações, saudade...")
-        Escreval ("???: Porem para nos encontrarmos as vezes é necessario mudar um pouco o cenario.")
+        Escreval ("???: Diversos sÃ£o os motivos que nos fazem voltar para um mesmo lugar.")
+        Escreval ("???: Sejam eles pessoas, obrigaÃ§Ãµes, saudade...")
+        Escreval ("???: Porem para nos encontrarmos as vezes Ã© necessario mudar um pouco o cenario.")
         Escreval ("???: Como esta o seu cenario?")
         Leia (Resposta)
         LimpaTela
@@ -455,17 +455,17 @@ FimSe
                         Se(Detector_Resposta2 = 0) entao
                         Detector_Resposta2 <- Pos("estranho", Resposta)
                            Se(Detector_Resposta2 = 0) entao
-                           Detector_Resposta2 <- Pos("terrível", Resposta)
+                           Detector_Resposta2 <- Pos("terrÃ­vel", Resposta)
                               Se(Detector_Resposta2 = 0) entao
-                              Detector_Resposta2 <- Pos("horrível", Resposta)
+                              Detector_Resposta2 <- Pos("horrÃ­vel", Resposta)
                                  Se(Detector_Resposta2 = 0) entao
                                  Detector_Resposta2 <- Pos("pior", Resposta)
                                     Se(Detector_Resposta2 = 0) entao
-                                    Detector_Resposta2 <- Pos("não ta", Resposta)
+                                    Detector_Resposta2 <- Pos("nÃ£o ta", Resposta)
                                        Se(Detector_Resposta2 = 0) entao
-                                       Detector_Resposta2 <- Pos("não tá", Resposta)
+                                       Detector_Resposta2 <- Pos("nÃ£o tÃ¡", Resposta)
                                           Se(Detector_Resposta2 = 0) entao
-                                          Detector_Resposta2 <- Pos("nao tá", Resposta)
+                                          Detector_Resposta2 <- Pos("nao tÃ¡", Resposta)
                                              Se(Detector_Resposta2 = 0) entao
                                              Detector_Resposta2 <- Pos("nao ta", Resposta)
                                                 Se(Detector_Resposta2 = 0) entao
@@ -473,13 +473,13 @@ FimSe
                                                    Se(Detector_Resposta2 = 0) entao
                                                    Detector_Resposta2 <- Pos("n ta", Resposta)
                                                       Se(Detector_Resposta2 = 0) entao
-                                                      Detector_Resposta2 <- Pos("n tá", Resposta)
+                                                      Detector_Resposta2 <- Pos("n tÃ¡", Resposta)
                                                          Se(Detector_Resposta2 = 0) entao
-                                                         Detector_Resposta2 <- Pos("não ta", Resposta)
+                                                         Detector_Resposta2 <- Pos("nÃ£o ta", Resposta)
                                                             Se(Detector_Resposta2 = 0) entao
-                                                            Detector_Resposta2 <- Pos("não está", Resposta)
+                                                            Detector_Resposta2 <- Pos("nÃ£o estÃ¡", Resposta)
                                                                Se(Detector_Resposta2 = 0) entao
-                                                               Detector_Resposta2 <- Pos("nao está", Resposta)
+                                                               Detector_Resposta2 <- Pos("nao estÃ¡", Resposta)
                                                                   Se(Detector_Resposta2 = 0) entao
                                                                   Detector_Resposta2 <- Pos("-", Resposta)
                                                                      Se(Detector_Resposta2 = 0) entao
@@ -531,7 +531,7 @@ FimSe
         Detector_Resposta <- 0
         Detector_Resposta <- Pos("e voce", Resposta)
         Se (Detector_Resposta = 0) entao
-           Detector_Resposta <- Pos("e você", Resposta)
+           Detector_Resposta <- Pos("e vocÃª", Resposta)
            Se (Detector_Resposta = 0) entao
            Detector_Resposta <- Pos("e vc", Resposta)
                 Se (Detector_Resposta = 0) entao
@@ -555,21 +555,21 @@ FimSe
          Escreval ("???: Parece diferente e ao mesmo tempo similar a minha realidade.")
          Relacao <- Relacao + 1
          Escreval ("???: Se eu fosse definir em uma cor seria o mais escuro dos tons de preto.")
-         Escreval ("???: Em uma escuridao desse tipo não há meio termo.")
-         Escreval ("???: Tudo pode mudar tão rapido...")
+         Escreval ("???: Em uma escuridao desse tipo nÃ£o hÃ¡ meio termo.")
+         Escreval ("???: Tudo pode mudar tÃ£o rapido...")
          Escreval ("???: Porem ao mesmo tempo penso que talvez nada nunca mude.")
          Escreval ("???: Quer saber de algo que realmente muda o mundo?")
          Leia (Resposta)
          LimpaTela
          Resposta <- Minusc(Resposta)
-         Se (Resposta = "sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que não") ou (Resposta = "pqn") entao
+         Se (Resposta = "sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que nÃ£o") ou (Resposta = "pqn") entao
             Relacao <- Relacao + 1
             Escreval ("???: Perspectiva.")
             Escreval ("???: Acredite...")
             Escreval ("???: Se tem algo que podemos fazer para mudar o mundo INTEIRO.")
-            Escreval ("???: É mudarmos a nossa propria maneira de ver as coisas.")
-            Escreval ("???: Algo semelhante é isso que temos agora, você ainda nao sabe o meu nome.")
-            Escreval ("???: Porem a partir do momento que descobrir que ele é Sarah.")
+            Escreval ("???: Ã‰ mudarmos a nossa propria maneira de ver as coisas.")
+            Escreval ("???: Algo semelhante Ã© isso que temos agora, vocÃª ainda nao sabe o meu nome.")
+            Escreval ("???: Porem a partir do momento que descobrir que ele Ã© Sarah.")
             Escreval ("Sarah: Vai perceber que certas coisas mudam.")
             Escreval ("Sarah: Meio tarde para isso mas, e voce, como se chama?")
             Leia (Nome)
@@ -579,7 +579,7 @@ FimSe
             Se (Detector_Resposta = 0) entao
                Detector_Resposta <- Pos("chamo", Nome)
                   Se (Detector_Resposta = 0) entao
-                  Detector_Resposta <- Pos("é", Nome)
+                  Detector_Resposta <- Pos("Ã©", Nome)
                      Se (Detector_Resposta = 0) entao
                      Detector_Resposta <- Pos("de", Nome)
                         Se (Detector_Resposta = 0) entao
@@ -608,8 +608,8 @@ FimSe
             Nome_Maiusculo_e_Minusculo (Nome)
             Escreval ("Sarah: Prazer em te conhecer ", nome, ".")
             FimSe
-            Escreval ("Sarah: Raras são as pessoas que conseguimos ter conversas profundas como essa.")
-            Escreval ("Sarah: Geralmente ficamos tão ocupados com nossas tarefas do dia a dia")
+            Escreval ("Sarah: Raras sÃ£o as pessoas que conseguimos ter conversas profundas como essa.")
+            Escreval ("Sarah: Geralmente ficamos tÃ£o ocupados com nossas tarefas do dia a dia")
             Escreval ("Sarah: que esquecemos de simplesmente parar por alguns minutos")
             Escreval ("Sarah: e realmente pensar sobre as coisas.")
             Relacao <- Relacao + 1
@@ -624,14 +624,14 @@ FimSe
       Leia (Resposta)
       LimpaTela
       Resposta <- Minusc(Resposta)
-      Se (Resposta = "sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que não") ou (Resposta = "pqn") entao
+      Se (Resposta = "sim") ou (Resposta = "s") ou (Resposta = "claro") ou (Resposta = "clr") ou (Resposta = "pq n") ou (Resposta = "pq nao") ou (Resposta = "por que nao") ou (Resposta = "por que nÃ£o") ou (Resposta = "pqn") entao
          Relacao <- Relacao + 1
          Escreval ("???: Perspectiva.")
          Escreval ("???: Acredite...")
          Escreval ("???: Se tem algo que podemos fazer para mudar o mundo INTEIRO.")
-         Escreval ("???: É mudarmos a nossa propria maneira de ver as coisas.")
-         Escreval ("???: Algo semelhante é isso que temos agora, você ainda nao sabe o meu nome.")
-            Escreval ("???: Porem a partir do momento que descobrir que ele é Sarah.")
+         Escreval ("???: Ã‰ mudarmos a nossa propria maneira de ver as coisas.")
+         Escreval ("???: Algo semelhante Ã© isso que temos agora, vocÃª ainda nao sabe o meu nome.")
+            Escreval ("???: Porem a partir do momento que descobrir que ele Ã© Sarah.")
             Escreval ("Sarah: Vai perceber que certas coisas mudam.")
             Escreval ("Sarah: Meio tarde para isso mas, e voce, como se chama?")
             Leia (Nome)
@@ -641,7 +641,7 @@ FimSe
             Se (Detector_Resposta = 0) entao
                Detector_Resposta <- Pos("chamo", Nome)
                   Se (Detector_Resposta = 0) entao
-                  Detector_Resposta <- Pos("é", Nome)
+                  Detector_Resposta <- Pos("Ã©", Nome)
                      Se (Detector_Resposta = 0) entao
                      Detector_Resposta <- Pos("de", Nome)
                         Se (Detector_Resposta = 0) entao
@@ -670,8 +670,8 @@ FimSe
             Nome_Maiusculo_e_Minusculo (Nome)
             Escreval ("Sarah: Prazer em te conhecer ", nome, ".")
             FimSe
-            Escreval ("Sarah: Raras são as pessoas que conseguimos ter conversas profundas como essa.")
-            Escreval ("Sarah: Geralmente ficamos tão ocupados com nossas tarefas do dia a dia")
+            Escreval ("Sarah: Raras sÃ£o as pessoas que conseguimos ter conversas profundas como essa.")
+            Escreval ("Sarah: Geralmente ficamos tÃ£o ocupados com nossas tarefas do dia a dia")
             Escreval ("Sarah: que esquecemos de simplesmente parar por alguns minutos")
             Escreval ("Sarah: e realmente pensar sobre as coisas.")
             Relacao <- Relacao + 1
@@ -685,37 +685,37 @@ FimSe
    FimSe
 Se (FimInesperado = 1) entao
    Escreval ("???: Preciso voltar aos meus estudos.")
-   Escreval ("???: Até mais...")
+   Escreval ("???: AtÃ© mais...")
 FimSe
 Se (Relacao = 3) entao
-   Escreval ("Sarah: Adorei conversar com você ", nome, ", mas preciso voltar aos meus estudos.")
+   Escreval ("Sarah: Adorei conversar com vocÃª ", nome, ", mas preciso voltar aos meus estudos.")
    Se (Detector_Resposta2 <> 0) entao
       Escreval ("Sarah: Espero que as coisas melhorem por ai,")
       Escreval ("Sarah: de verdade...")
    FimSe
    Se (Detector_Resposta3 <> 0) entao
-      Escreval ("Sarah: Que o seu cenario continue assim, você merece!")
+      Escreval ("Sarah: Que o seu cenario continue assim, vocÃª merece!")
    FimSe
-   Escreval ("Sarah: As vezes sou péssima de lembrança, entao se nos encontrarmos novamente")
-   Escreval ("Sarah: e eu não lembrar de você, não fique triste.")
+   Escreval ("Sarah: As vezes sou pÃ©ssima de lembranÃ§a, entao se nos encontrarmos novamente")
+   Escreval ("Sarah: e eu nÃ£o lembrar de vocÃª, nÃ£o fique triste.")
    Escreval ("Sarah: Des de que eu e o que conversamos ainda esteja na sua memoria")
-   Escreval ("Sarah: isso será prova o suficiente do quanto foi real.")
-   Escreval ("Sarah: Até mais... :)")
+   Escreval ("Sarah: isso serÃ¡ prova o suficiente do quanto foi real.")
+   Escreval ("Sarah: AtÃ© mais... :)")
 Senao
      Se (Relacao = 2) entao
-        Escreval ("Sarah: Foi bom conversar com você ", nome, ", mas preciso voltar aos meus estudos.")
+        Escreval ("Sarah: Foi bom conversar com vocÃª ", nome, ", mas preciso voltar aos meus estudos.")
         Se (Detector_Resposta2 <> 0) entao
            Escreval ("Sarah: Espero que as coisas melhorem por ai,")
            Escreval ("Sarah: de verdade...")
         FimSe
         Se (Detector_Resposta3 <> 0) entao
-           Escreval ("Sarah: Que o seu cenario continue assim, você merece!")
+           Escreval ("Sarah: Que o seu cenario continue assim, vocÃª merece!")
         FimSe
-        Escreval ("Sarah: Até mais ^-^")
+        Escreval ("Sarah: AtÃ© mais ^-^")
      Senao
         Se (FimInesperado <> 1) entao
-        Escreval ("Sarah: Foi bom conversar com você, mas preciso voltar aos meus estudos.")
-        Escreval ("Sarah: Até mais...")
+        Escreval ("Sarah: Foi bom conversar com vocÃª, mas preciso voltar aos meus estudos.")
+        Escreval ("Sarah: AtÃ© mais...")
         FimSe
      FimSe
 FimSe
